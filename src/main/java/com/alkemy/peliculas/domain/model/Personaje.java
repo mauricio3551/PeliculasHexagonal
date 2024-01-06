@@ -19,6 +19,9 @@ public class Personaje {
     @Column(name = "PESO", nullable = false)
     private Integer peso;
 
+    @Column(name = "IMAGEN")
+    private String imagen;
+
     @Column(name = "HISTORIA", nullable = false)
     private String historia;
 
@@ -65,16 +68,24 @@ public class Personaje {
         this.peliculas = peliculas;
     }
 
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Personaje personaje = (Personaje) o;
-        return Objects.equals(id, personaje.id) && Objects.equals(edad, personaje.edad) && Objects.equals(peso, personaje.peso) && Objects.equals(historia, personaje.historia) && Objects.equals(peliculas, personaje.peliculas);
+        return Objects.equals(id, personaje.id) && Objects.equals(edad, personaje.edad) && Objects.equals(peso, personaje.peso) && Objects.equals(imagen, personaje.imagen) && Objects.equals(historia, personaje.historia) && Objects.equals(peliculas, personaje.peliculas);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, edad, peso, historia, peliculas);
+        return Objects.hash(id, edad, peso, imagen, historia, peliculas);
     }
 }

@@ -14,12 +14,12 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(ControllerPattern.ALKEMY_GENERO_ENDPOINT)
-public class GeneroController {
+public class GeneroControllerImpl {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(GeneroController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GeneroControllerImpl.class);
 
     @Autowired
-    public GeneroController() {
+    public GeneroControllerImpl() {
     }
 
     @PostMapping(ControllerPattern.CREAR_ENDPOINT)
