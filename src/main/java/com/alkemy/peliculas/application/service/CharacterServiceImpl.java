@@ -1,4 +1,4 @@
 package com.alkemy.peliculas.application.service;
 
-public class GeneroServiceImpl {
+public class CharacterServiceImpl {
 }

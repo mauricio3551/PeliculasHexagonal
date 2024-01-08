@@ -2,11 +2,11 @@
 #### Situación Inicial📍
 Una empresa te contrata a tí y a tu equipo de developers para desarrollar una aplicación
 que le permita a niños y niñas hispanohablantes explorar el mundo de Disney. Para hacer
-esto, el cliente te solicita que en la aplicación se puedan conocer y modificar los personajes
-que lo componen y entender en qué películas participaron cada uno de esos personajes.
+esto, el cliente te solicita que en la aplicación se puedan conocer y modificar los characters
+que lo componen y entender en qué películas participaron cada uno de esos characters.
 Objetivo 🎯
 Para lograr la solicitud del cliente, deberás desarrollar una API que permita navegar por
-estos personajes y sus películas y se deberá exponer la información para que cualquier
+estos characters y sus películas y se deberá exponer la información para que cualquier
 frontend pueda consumirla. Algunos elementos que debes tener en cuenta:
 ```
 - 👉 Utilizar Spring Boot.
@@ -44,8 +44,8 @@ Requerimientos técnicos 💻
      - Películas o series asociadas
 
 ##### 2. Creación, Edición y Eliminación de Personajes (CRUD)
-- Deberán existir las operaciones básicas de creación, edición y eliminación de personajes.
-- Al guardar/actualizar un personaje, se deberá devolver esta entidad completa, es decir, con sus películas o
+- Deberán existir las operaciones básicas de creación, edición y eliminación de characters.
+- Al guardar/actualizar un character, se deberá devolver esta entidad completa, es decir, con sus películas o
 series relacionadas.
 - Al momento del Update, es importante solo actualizar la Entidad Personaje y no su listado de películas
 
@@ -53,7 +53,7 @@ series relacionadas.
 Deberá existir la operación de creación de Genero . 
 
 ##### 4. Detalle de Personaje
-En el detalle deberán listarse todos los atributos del personaje, como así también sus
+En el detalle deberán listarse todos los atributos del character, como así también sus
 películas o series relacionadas.
 
 ##### 5. Búsqueda de Personajes
@@ -74,17 +74,17 @@ Para especificar el término de búsqueda o filtros se deberán enviar como par�
 
 Recordar que si ningún filtro es enviado, se deben devolver todas las entidades.
 
-##### 6. Detalle de Película / Serie con sus personajes
-Devolverá todos los campos de la película o serie junto a los personajes asociados a la
+##### 6. Detalle de Película / Serie con sus characters
+Devolverá todos los campos de la película o serie junto a los characters asociados a la
 misma
 
 ##### 7. Creación, Edición y Eliminación de Película / Serie.
 Deberán existir las operaciones básicas de creación, edición y eliminación de películas o
 series.
 
-- Al crear una Película, crearla con sus personajes asociados
-- Al guardar/actualizar una película, se deberá devolver esta entidad completa, es decir, con sus personajes asociados.
-- Al momento del Update, es importante solo actualizar la Entidad Película y no su listado de personajes
+- Al crear una Película, crearla con sus characters asociados
+- Al guardar/actualizar una película, se deberá devolver esta entidad completa, es decir, con sus characters asociados.
+- Al momento del Update, es importante solo actualizar la Entidad Película y no su listado de characters
 
 ##### 8. Búsqueda de Películas o Series
 Deberá permitir buscar por título, y filtrar por género. Además, permitir ordenar los
@@ -106,8 +106,8 @@ resultados por fecha de creación de forma ascendiente o descendiente.
 
 Recordar que si ningún filtro es enviado, se deben devolver todas las entidades.
 
-##### 9. Agregar/Remover personajes a una película
-Deberá existir un endpoint que nos permita agregar/remover personajes a una película.
+##### 9. Agregar/Remover characters a una película
+Deberá existir un endpoint que nos permita agregar/remover characters a una película.
 Los endpoint deberán ser:
 
    - POST /movies/{idMovie}/characters/{idCharacter}

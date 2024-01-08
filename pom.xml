@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.alkemy</groupId>
-	<artifactId>peliculas</artifactId>
+	<artifactId>movies</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>peliculas</name>
+	<name>movies</name>
 	<description>Proyecto para Alkemy con Arq hexagonal</description>
 	<properties>
 		<java.version>11</java.version>

@@ -6,7 +6,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "PERSONAJE")
-public class Personaje {
+public class Character {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class Personaje {
     private String historia;
 
     @ManyToMany(mappedBy = "personajes")
-    private Set<Pelicula> peliculas;
+    private Set<Movie> movies;
 
     public Long getId() {
         return id;
@@ -60,12 +60,12 @@ public class Personaje {
         this.historia = historia;
     }
 
-    public Set<Pelicula> getPeliculas() {
-        return peliculas;
+    public Set<Movie> getPeliculas() {
+        return movies;
     }
 
-    public void setPeliculas(Set<Pelicula> peliculas) {
-        this.peliculas = peliculas;
+    public void setPeliculas(Set<Movie> movies) {
+        this.movies = movies;
     }
 
     public String getImagen() {
@@ -80,12 +80,12 @@ public class Personaje {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Personaje personaje = (Personaje) o;
-        return Objects.equals(id, personaje.id) && Objects.equals(edad, personaje.edad) && Objects.equals(peso, personaje.peso) && Objects.equals(imagen, personaje.imagen) && Objects.equals(historia, personaje.historia) && Objects.equals(peliculas, personaje.peliculas);
+        Character character = (Character) o;
+        return Objects.equals(id, character.id) && Objects.equals(edad, character.edad) && Objects.equals(peso, character.peso) && Objects.equals(imagen, character.imagen) && Objects.equals(historia, character.historia) && Objects.equals(movies, character.movies);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, edad, peso, imagen, historia, peliculas);
+        return Objects.hash(id, edad, peso, imagen, historia, movies);
     }
 }

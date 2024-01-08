@@ -6,7 +6,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "GENERO")
-public class Genero {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class Genero {
     private String imagen;
 
     @OneToMany()
-    private Set<Pelicula> peliculas;
+    private Set<Movie> movies;
 
     public Long getId() {
         return id;
@@ -46,24 +46,24 @@ public class Genero {
         this.imagen = imagen;
     }
 
-    public Set<Pelicula> getPeliculas() {
-        return peliculas;
+    public Set<Movie> getPeliculas() {
+        return movies;
     }
 
-    public void setPeliculas(Set<Pelicula> peliculas) {
-        this.peliculas = peliculas;
+    public void setPeliculas(Set<Movie> movies) {
+        this.movies = movies;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Genero genero = (Genero) o;
-        return Objects.equals(id, genero.id) && Objects.equals(nombre, genero.nombre) && Objects.equals(imagen, genero.imagen) && Objects.equals(peliculas, genero.peliculas);
+        Category category = (Category) o;
+        return Objects.equals(id, category.id) && Objects.equals(nombre, category.nombre) && Objects.equals(imagen, category.imagen) && Objects.equals(movies, category.movies);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, imagen, peliculas);
+        return Objects.hash(id, nombre, imagen, movies);
     }
 }

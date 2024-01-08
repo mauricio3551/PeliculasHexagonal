@@ -5,20 +5,17 @@ public final class ControllerPattern {
     private ControllerPattern(){}
 
     //Path categoria
-    public static final String ALKEMY_CATEGORIA_ENDPOINT = "api/v1/categoria";
+    public static final String ALKEMY_CATEGORY_ENDPOINT = "api/v1/category";
 
     //Path pelicula
-    public static final String ALKEMY_PELICULA_ENDPOINT = "api/v1/pelicula";
+    public static final String ALKEMY_MOVIE_ENDPOINT = "api/v1/movie";
 
     //Path personaje
-    public static final String ALKEMY_PERSONAJE_ENDPOINT = "api/v1/personaje";
+    public static final String ALKEMY_CHARACTER_ENDPOINT = "api/v1/character";
 
-    //Path genero
-    public static final String ALKEMY_GENERO_ENDPOINT = "api/v1/genero";
-
-    public static final String BUSCAR_ENDPOINT = "/buscar";
-    public static final String CREAR_ENDPOINT = "/crear";
-    public static final String MODIFICAR_ENDPOINT = "/modificar";
-    public static final String ELIMINAR_ENDPOINT = "/eliminar";
+    public static final String GET_ENDPOINT = "/get";
+    public static final String CREATE_ENDPOINT = "/create";
+    public static final String PUT_ENDPOINT = "/put";
+    public static final String DELETE_ENDPOINT = "/delete";
     
 }

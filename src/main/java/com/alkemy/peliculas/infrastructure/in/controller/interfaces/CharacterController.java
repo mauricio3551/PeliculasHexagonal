@@ -1,4 +1,4 @@
 package com.alkemy.peliculas.infrastructure.in.controller.interfaces;
+public interface CharacterController {
 
-public interface PersonajeController {
 }

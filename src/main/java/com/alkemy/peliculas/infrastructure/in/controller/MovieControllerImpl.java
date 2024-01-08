@@ -1,4 +1,4 @@
 package com.alkemy.peliculas.infrastructure.in.controller;
 
-public class PeliculaControllerImpl {
+public class MovieControllerImpl {
 }
